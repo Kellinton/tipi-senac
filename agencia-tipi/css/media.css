@@ -1,0 +1,87 @@
+/* 1200px PC*/
+
+
+/* 601 até 900 para Notbook */
+@media (max-width: 900px){
+    .topo, .redeSocialTodo{
+        display: none;
+    }
+}
+/* 0 até 600 para Celular INICIO*/
+    @media (max-width: 600px){
+        .topo, .banner{
+            display: none;                  
+        }
+
+        /*sobre*/
+        .sobre {
+            padding: 50px 0;
+        }
+        
+        .sobre div {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        
+        .sobre div div {
+            width: 95%;
+            justify-content: flex-start;
+        }
+        
+        #contSobre{
+            border: solid thin #333;
+            border-radius: 25px;
+            padding: 20px 5px;
+            text-align: center;
+        }
+
+        .sobre img {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+
+        /*servicos*/
+        .servico div div {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .servico div div div {
+            width: 85%;
+            margin-bottom: 5%;
+        }
+        /*blog*/
+        
+        .blog div div div {
+            width: 85%;
+            margin-bottom: 5%;
+
+        }
+        
+        .blog div div{
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .blog img{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 25px;
+        }
+
+        /* informaçoes */
+
+        .informacoes div {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .informacoes div div{
+                width: 85%;
+        }
+    }
+
+
+/* 601 até 900 para Celular FIM */
+
