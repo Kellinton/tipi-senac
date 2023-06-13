@@ -18,7 +18,7 @@
             flex-direction: column;
         }
         .menu{
-            background-color: rgb(159, 50, 50);
+            background-color: #fff;
             height: 100%;
             position: fixed;
             margin: 0;
@@ -26,6 +26,11 @@
             width: 50%;
             z-index: 10;
             right: -350px;
+            transition: all 0.5s;
+        }
+            
+        .menu-ativo .menu{
+            right: 0;
         }
         .menu ul{
             flex-direction: column;
