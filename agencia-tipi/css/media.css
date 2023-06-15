@@ -89,6 +89,10 @@
         .topo {
             justify-content: space-around;
             margin-top: 5%;
+            flex-direction: row;
+        } .topo div nav{
+            align-items: center;
+            flex-direction: column;
         }
         .menu{
             top: 0;
@@ -117,7 +121,7 @@
             padding: 3px;
         }
         .redeSocialTodo {
-            margin-top: 15%;
+            margin-top: 15% auto;
         }
 
         .redeSocialTodo ul{
