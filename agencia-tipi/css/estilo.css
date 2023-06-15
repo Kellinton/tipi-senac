@@ -48,7 +48,10 @@ h2, h3, h4, a, button{
     height: 52px;
     text-indent: -9999px;
 }
-
+.topo div nav{
+    display: flex;
+    align-items: center;
+}
 .menu a {
     font-family: 'Anton', sans-serif;
     color: #333;

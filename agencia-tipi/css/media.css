@@ -2,6 +2,78 @@
 
 
 /* 601 até 900 para Notbook */
+@media (max-width: 900px) {
+
+    .topo{
+        flex-direction: column;
+    }
+    .topo h1{
+        margin: 5% 0;
+    }
+    .topo div nav{
+        display: flex;
+        align-items: center;
+    }
+    #contSobre p {
+        line-height: 25px; 
+    }
+    /*depoimento*/
+
+    .depoimento{
+        padding: 50px 0;
+        text-align: center;
+        background: url(../img/fundo.jpg) no-repeat center;
+        background-attachment: fixed; 
+        
+    }
+    
+    .depoimento h2{
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+    
+    .depoimento div div{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .depoimento div div img{
+        width: 25%;
+        margin-bottom: 50px;
+    }
+    
+    .depoimento div div div{
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        padding: 20px;
+        background: #f2f2f2;
+        border-radius: 40px;
+        margin-left: 30px;
+    }
+    
+    .depoimento div div div img{
+        width: 10%;
+        border-radius: 50px;
+        background: #ccc;
+        margin: 0 auto;
+    }
+    
+    .depoimento div div div div{
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+
 
 /* 601 até 900 para Not FIM */
 @media not all and (max-width: 600px){
@@ -15,10 +87,12 @@
     @media (max-width: 600px){
 
         .topo {
-            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 5%;
         }
         .menu{
-            background-color: #fff;
+            top: 0;
+            background-color: rgba(76, 76, 76, 0.95);
             height: 100%;
             position: fixed;
             margin: 0;
@@ -26,7 +100,7 @@
             width: 50%;
             z-index: 10;
             right: -350px;
-            transition: all 0.5s;
+            transition: all 0.5s ease-out;
         }
 
         .menu-ativo .menu{
@@ -35,7 +109,24 @@
         .menu ul{
             flex-direction: column;
         }
+        .menu ul li{
+            margin:  5% 0;
+        }
+        .menu a{
+            color: #fff;
+            padding: 3px;
+        }
+        .redeSocialTodo {
+            margin-top: 15%;
+        }
 
+        .redeSocialTodo ul{
+            flex-direction: row;
+            justify-content: center;
+        }
+        .redeSocialTodo a{
+            padding: 15px;
+        }
         .abrir-menu{
            background-image: url(../img/btn-menu.png);
            background-size: cover;
@@ -49,11 +140,13 @@
            padding: 20px;
            border: 0;
            display: block;
+           margin: 5%;
         }
         .banner{
             display: none;                  
         }
         /*sobre*/
+
         .sobre {
             padding: 50px 0;
         }
@@ -119,6 +212,14 @@
 
         .informacoes div div{
                 width: 85%;
+        }
+
+        /*rodape*/
+        .rodape div:nth-child(1){
+            padding: 2% 0;
+        }
+        .rodape div:nth-child(2){
+            padding: 2% 0;
         }
     }
 
