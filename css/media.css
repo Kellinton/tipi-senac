@@ -9,6 +9,9 @@
     button.slick-next { /*estava causando quebra no responsivo*/
         display: none!important;  
     }
+    button.slick-prev {
+        display: none!important;  
+    }
 
     .topo{
         flex-direction: column;
@@ -57,7 +60,7 @@
         width: 50%;
         padding: 20px;
         background: #f2f2f2;
-        border-radius: 40px;
+        border-radius: 30px;
         margin-left: 30px;
     }
     
@@ -100,6 +103,9 @@
 /* 0 até 600 para Celular INICIO*/
     @media (max-width: 600px){
         button.slick-next {
+            display: none!important;  
+        }
+        button.slick-prev {
             display: none!important;  
         }
         button.fechar-menu, button.abrir-menu{
