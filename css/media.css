@@ -3,7 +3,9 @@
 
 /* 601 até 900 para Notbook */
 @media (max-width: 900px) {
-
+    button.slick-next{ /*estava causando quebra no responsivo*/
+        display: none;  
+    }
     .topo{
         flex-direction: column;
     }
@@ -17,6 +19,7 @@
     #contSobre p {
         line-height: 25px; 
     }
+    
     /*depoimento*/
 
     .depoimento{
@@ -40,7 +43,7 @@
     }
     
     .depoimento div div img{
-        width: 25%;
+        width: 25%!import;
         margin-bottom: 50px;
     }
     
@@ -68,6 +71,14 @@
         margin-left: 0;
     }
 
+    /*rodape*/
+    .rodape div:nth-child(1){
+        padding: 0;
+    }
+    .rodape div:nth-child(2){
+        padding: 0;
+    }
+
 }
 
 
@@ -85,7 +96,7 @@
 
 /* 0 até 600 para Celular INICIO*/
     @media (max-width: 600px){
-
+          
         .topo {
             justify-content: space-around;
             margin-top: 5%;
@@ -187,6 +198,29 @@
             width: 85%;
             margin-bottom: 5%;
         }
+
+        /*galeria*/
+        .galeria{
+            padding: 2px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .galeria img{
+            margin: 5px;
+        }
+        button.slick-next{
+            display: none;
+        }
+        /*depoimento*/
+
+        .depoimento p{
+            font-size: 10px;
+        }
+
+        /*dots*/
+        .slick-dots li button{
+            display: none;
+        }
         /*blog*/
         
         .blog div div div {
@@ -207,6 +241,9 @@
         }
 
         /* informaçoes */
+        h2, h3, h4, a, button{
+            font-size: 15px;
+        }
 
         .informacoes div {
             flex-direction: column;
@@ -218,6 +255,9 @@
                 width: 85%;
         }
 
+        .informacoes div:nth-child(2) a {
+            font-size: 15px;      
+        } 
         /*rodape*/
         .rodape div:nth-child(1){
             padding: 2% 0;
@@ -230,3 +270,17 @@
 
 /* 601 até 900 para Celular FIM */
 
+/*900 até 1200*/
+@media (max-width: 1200px){
+    button.slick-next{ 
+    display: none;
+}
+
+ /*rodape*/
+ .rodape div:nth-child(1){
+    padding: 0;
+}
+.rodape div:nth-child(2){
+    padding: 0;
+}
+}

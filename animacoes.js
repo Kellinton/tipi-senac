@@ -7,6 +7,22 @@ $(".single-item").slick({
     arrows: true
 });
 
+$('.galeriaCarro').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+	
+
+$(".depoimentoCarro").slick({
+  infinite: true,
+  dots: true,
+  speed: 300,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true
+});
 
 $('.responsive').slick({
     dots: true,
