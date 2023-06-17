@@ -52,6 +52,9 @@ h2, h3, h4, a, button{
     display: flex;
     align-items: center;
 }
+button.fechar-menu, button.abrir-menu{
+    display: none;
+}
 .menu a {
     font-family: 'Anton', sans-serif;
     color: #333;

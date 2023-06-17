@@ -3,9 +3,13 @@
 
 /* 601 até 900 para Notbook */
 @media (max-width: 900px) {
-    button.slick-next{ /*estava causando quebra no responsivo*/
-        display: none;  
+    button.fechar-menu, button.abrir-menu{
+        display: none;
     }
+    button.slick-next { /*estava causando quebra no responsivo*/
+        display: none!important;  
+    }
+
     .topo{
         flex-direction: column;
     }
@@ -84,8 +88,6 @@
 
 
 
-
-
 /* 601 até 900 para Not FIM */
 @media not all and (max-width: 600px){
     .abrir-menu, 
@@ -94,9 +96,15 @@
     }
 }
 
+
 /* 0 até 600 para Celular INICIO*/
     @media (max-width: 600px){
-          
+        button.slick-next {
+            display: none!important;  
+        }
+        button.fechar-menu, button.abrir-menu{
+            display: block;
+        }
         .topo {
             justify-content: space-around;
             margin-top: 5%;
