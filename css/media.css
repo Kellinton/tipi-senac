@@ -1,12 +1,17 @@
+/*As media queries permitem definir regras de estilo específicas para diferentes tipos de dispositivos ou 
+condições de exibição, como a largura da tela, altura, orientação, resolução, densidade de pixels...*/
+
 /* 1200px PC*/
 
 
 /* 601 até 900 para Notbook */
-@media (max-width: 900px) {
+@media (max-width: 900px) { /*max-width define a largura máxima. Os conteúdos abaixo serão aplicados
+    quando a largura da tela for igual ou menor que 900 pixels*/
     button.fechar-menu, button.abrir-menu{
         display: none;
     }
-    button.slick-next { /*estava causando quebra no responsivo*/
+    button.slick-next { /*estava causando quebra no responsivo mesmo colocando display none, tive colocar  !important para forçar
+        o desapareciomento dos dois button*/
         display: none!important;  
     }
     button.slick-prev {
@@ -92,7 +97,8 @@
 
 
 /* 601 até 900 para Not FIM */
-@media not all and (max-width: 600px){
+@media not all and (max-width: 600px){ /* "not all" é uma forma de negar uma condição em uma consulta de
+     mídia em CSS. Ela é usada para aplicar estilos apenas quando a condição especificada não é atendida.*/
     .abrir-menu, 
     fechar-menu{
         display: none;
@@ -174,18 +180,18 @@
         .banner{
             display: none;                  
         }
-        /*sobre*/
+        *sobre*/
 
-        .sobre {
+        #sobre {
             padding: 50px 0;
         }
         
-        .sobre div {
+        #sobre div {
             flex-direction: column-reverse;
             align-items: center;
         }
         
-        .sobre div div {
+        #sobre div div {
             width: 95%;
             justify-content: flex-start;
         }
@@ -197,18 +203,18 @@
             text-align: center;
         }
 
-        .sobre img {
+        #sobre img {
             width: 100%;
             margin-bottom: 5%;
         }
 
         /*servicos*/
-        .servico div div {
+        #servico div div {
             flex-direction: column;
             align-items: center;
         }
         
-        .servico div div div {
+        #servico div div div {
             width: 85%;
             margin-bottom: 5%;
         }
@@ -259,17 +265,17 @@
             font-size: 15px;
         }
 
-        .informacoes div {
+        #informacoes div {
             flex-direction: column;
             align-items: center;
             margin-bottom: 20px;
         }
 
-        .informacoes div div{
+        #informacoes div div{
                 width: 85%;
         }
 
-        .informacoes div:nth-child(2) a {
+        #informacoes div:nth-child(2) a {
             font-size: 15px;      
         } 
         /*rodape*/

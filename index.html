@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--a declaração "doctype", serve para informar ao navegador qual é a versão HTML-->
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agência TIPI</title>
+  <head> <!--Dentro do Head ficam informações sobre o documento e metadados, título da página, a codificação de caracteres, 
+    e a adição do CSS e de scripts JS-->
+    <meta charset="UTF-8" /> <!--A tag "meta charset" define qual conjunto de caracteres está sendo usado no documento-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!--este meta informa ao Internet Explorer a utilizar a versão mais recente do mecanismo de renderização disponível.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Controla o comportamento de exibição e o dimensionamento da página em dispositivos móveis.-->
+    <title>Agência TIPI</title> <!--Título da página-->
 
-    
+    <!-- CDNs são servidores que servem para carregar arquivos de biblioetecas. Logo abaixo, foi utilizado alguns CDN's para importar
+    o carousel-->
+
     <!-- slick.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,19 +22,24 @@
     <link rel="stylesheet" href="css/media.css">
   </head>
 
-  <body>
+  <body> <!--No body, temos todo o conteúdo visível de uma página 
+    Web,exibido no navegador-->
     <!-- Corpo da página -->
-    <header class="site topo">
-      <h1>Agência TIPI</h1>
+
+    <header class="site topo"> <!--O header é uma das principais tags semanticas
+      do HTML, ele é o cabeçalho do site-->
+      <h1>Agência TIPI</h1><!--logotipo do site sendo representada pela tag h1-->
     <div>
       <button class="abrir-menu"></button>
-      <nav class="menu">
+
+      <nav class="menu"> <!--A nav é uma tag de navegação, dentro dele temos links que te levam
+      para outras páginas-->
         <button class="fechar-menu"></button>
         <ul>
           <li><a href="#" class="ativo">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servico">Serviços</a></li>
+          <li><a href="#informacoes">Contato</a></li>
         </ul>
         <div class="redeSocialTodo">
           <button>Login</button>
@@ -46,8 +54,11 @@
       
     </header>
 
-    <main>
-      <section class="banner">
+    <main> <!--No main, fica o conteúdo principal do site-->
+
+      <section class="banner"><!--E dentro do main, temos as "sections", que servem para separar
+      os conteúdos da main em seções distintas-->
+
         <div class="single-item">
           <img src="img/banner.png" alt="Banner Cinza" />
           <img src="img/banner.png"" alt="Banner Cinza" />
@@ -57,7 +68,7 @@
         </div>
       </section>
 
-      <section class="sobre">
+      <section id="sobre">
         <div class="site">
           <div id="contSobre">
             <h2>Sobre TIPI</h2>
@@ -77,7 +88,7 @@
         </div>
       </section>
 
-      <section class="servico">
+      <section id="servico">
         <div class="site">
           <h2>Serviços</h2>
           <div>
@@ -238,7 +249,7 @@
 
     </main>
 
-      <footer class="informacoes">
+      <footer id="informacoes"> <!--O footer é o rodapé do site, onde fica informações adicionais-->
         <div class="site">
           <div>
             <h2>Informações</h2>
