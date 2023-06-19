@@ -9,8 +9,8 @@ font-family: 'Roboto Mono', monospace;
 
 */
 
-
-:root { /* para definir variáveis globais ou personalizadas, conhecidas como CSS Custom Properties ou CSS Variables.*/
+/* para definir variáveis globais ou personalizadas, conhecidas como CSS Custom Properties ou CSS Variables.*/
+:root { 
     --titles: #cb6600;
     --background: #f2f2f2;
     --background2: #4c4c4c;
