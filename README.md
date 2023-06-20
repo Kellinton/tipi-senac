@@ -24,6 +24,6 @@ no site da Agência. Com o seletor, eu defini variáveis CSS. Tive um ganho de p
 
 Media query :
 
-Utilzamos Media queries para deixar o layout responsivo. Com ele, pudemos codificar o código do site para diferentes dispositivos também, como smartphones, tablets e desktops.
+Utilizamos Media queries para deixar o layout responsivo. Codificamos o código do site para diferentes dispositivos também, como smartphones, tablets e desktops.
 
 
