@@ -20,7 +20,7 @@ de integração no código. Se tratando de desempenho, implantar CDN é um ganho
 :root :
 
 Utilizei um pouco do seletor :root (seletor especial) no gerenciamento das cores
-no site da Agência. Com o seletor, eu defini variáveis CSS. Tive um ganho de produtividade na hora de modificar as cores do sitre por se encontrarem em um único local, evitando assim, ter que trocá-las em cada propriedade "background-color" ou "color" do CSS.
+no site da Agência. Com o seletor, eu defini variáveis CSS. Tive um ganho de produtividade na hora de modificar as cores do site em um único local, evitando assim, ter que trocá-las em cada propriedade "background-color" ou "color" do CSS.
 
 Media query :
 
