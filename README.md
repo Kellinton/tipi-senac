@@ -8,7 +8,7 @@ alguns recursos que foram utilizados na criação do site.
 
 GitHub Desktop :
 
-Utilzei o GitHub Desktop para gerenciar o código-fonte do site de forma remota.
+Utilizei o GitHub Desktop para gerenciar o código-fonte do site de forma remota.
 Alternei entre versões do site de forma rápida e prática para fazer as modificações
 do site.
 
