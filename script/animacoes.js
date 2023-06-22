@@ -1,3 +1,7 @@
+  // var guarda informacao
+  //quando o scroll for ativado, ira executar uma função (on)
+  //tecla || significa "ou" na programação
+  // operadores lógicos || que significa "ou" e "and"
 AOS.init();
 
 $(".single-item").slick({
@@ -73,3 +77,20 @@ $('.responsive').slick({
   document.querySelector ('.fechar-menu').onclick = function () {
     document.documentElement.classList.remove('menu-ativo');
   }
+
+
+  window.onscroll = function(){
+
+    var topo = window.scrollY || document.documentElement.scrollTop;
+
+    if(topo > 800){
+      console.log("Adicionar menu fixo" + topo);
+      document.getElementById("topoFixo").classList.add("menu-fixo");
+      document.getElementById("topoFixo").classList.remove("site");
+    }
+    else{
+      console.log ("Remover menu fixo");
+      document.getElementById("topoFixo").classList.remove("menu-fixo");
+      document.getElementById("topoFixo").classList.add("site");
+    }
+}

@@ -37,11 +37,19 @@ h2, h3, h4, a, button{
 
 .topo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 40px;
 }
 
+.menu-fixo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(255, 252, 252, 0.9);
+    animation: fadeIn 2s ease-in-out;
+}
 .topo nav ul {
     display: flex;
 }
