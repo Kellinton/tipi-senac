@@ -1,7 +1,4 @@
-  // var guarda informacao
-  //quando o scroll for ativado, ira executar uma função (on)
-  //tecla || significa "ou" na programação
-  // operadores lógicos || que significa "ou" e "and"
+
 AOS.init();
 
 $(".single-item").slick({
@@ -78,7 +75,10 @@ $('.responsive').slick({
     document.documentElement.classList.remove('menu-ativo');
   }
 
-
+  // var guarda informacao
+  //quando o scroll for ativado, ira executar uma função (on)
+  //tecla || significa "ou" na programação
+  // operadores lógicos || que significa "ou" e "and"
   window.onscroll = function(){
 
     var topo = window.scrollY || document.documentElement.scrollTop;
