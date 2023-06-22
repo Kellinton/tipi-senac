@@ -19,10 +19,14 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" /> <!--para fazer o reset do site, 
       padronizando e eliminando as diferenças de estilo padrão entre navegadores-->
-    <link rel="stylesheet" href="css/estilo.css" /> <!-- Um link que chama o arquivo
-    de estilo CSS dentro da pasta CSS-->
+   
     <link rel="stylesheet" href="css/media.css"><!-- Um link que chama o arquivo
       de Media dentro da pasta CSS-->
+       <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/estilo.css" /> <!-- Um link que chama o arquivo
+      de estilo CSS dentro da pasta CSS-->
   </head>
 
   <body> <!--No body, temos todo o conteúdo visível de uma página 
@@ -72,7 +76,7 @@
         </div>
       </section>
 
-      <section id="sobre">
+      <section data-aos="flip-left" id="sobre">
         <div class="site">
           <div id="contSobre">
             <h2>Sobre TIPI</h2>
@@ -92,7 +96,7 @@
         </div>
       </section>
 
-      <section id="servico">
+      <section data-aos="flip-left" id="servico">
         <div class="site">
           <h2>Serviços</h2>
           <div>
@@ -142,7 +146,7 @@
         </div>
       </section>
 
-      <section class="galeria galeriaCarro">
+      <section data-aos="fade-down" class="galeria galeriaCarro">
         <img src="img/galeria01.png" alt="Galeria de Imagens 01" />
         <img src="img/galeria02.png" alt="Galeria de Imagens 02" />
         <img src="img/galeria03.png" alt="Galeria de Imagens 03" />
@@ -151,7 +155,7 @@
         <img src="img/galeria06.png" alt="Galeria de Imagens 06" />
       </section>
 
-      <section class="depoimento">
+      <section data-aos="flip-left" class="depoimento">
         <div class="site">
           <h2>Depoimento</h2>
           <div>
@@ -204,7 +208,7 @@
         </div>
       </section>
 
-      <section class="blog">
+      <section data-aos="flip-left" class="blog">
         <div class="site">
           <h2>Blog</h2>
           <div>
@@ -253,8 +257,8 @@
 
     </main>
 
-      <footer id="informacoes"> <!--O footer é o rodapé do site, onde fica informações adicionais-->
-        <div class="site">
+      <footer data-aos="flip-left" id="informacoes"> <!--O footer é o rodapé do site, onde fica informações adicionais-->
+        <div data-aos="fade-up" class="site">
           <div>
             <h2>Informações</h2>
             <img src="img/logo02.svg" alt="">
@@ -293,6 +297,12 @@
     </div>
     
       
+
+ <!-- AOS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 <script src="./animacoes.js"></script>
   </body>
 </html>

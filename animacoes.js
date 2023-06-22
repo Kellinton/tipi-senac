@@ -1,3 +1,5 @@
+AOS.init();
+
 $(".single-item").slick({
     infinite: true,
     dots: true,
