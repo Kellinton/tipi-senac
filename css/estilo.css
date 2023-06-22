@@ -48,7 +48,7 @@ h2, h3, h4, a, button{
     width: 100%;
     z-index: 2;
     background-color: rgba(255, 252, 252, 0.9);
-    animation: fadeIn 2s ease-in-out;
+    box-shadow: 0px 5px 10px #0000004a;
 }
 .topo nav ul {
     display: flex;
