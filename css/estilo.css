@@ -584,3 +584,68 @@ button.fechar-menu, button.abrir-menu{
     padding: 50px;
 }
 
+/*Contato*/
+
+.form{
+    padding:  50px 0;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.form h2{
+    font-size:  30px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+
+.form form{
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5%;
+    border: solid 1px var(--background2);
+    border-radius: 25px;
+}
+.form form div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form input, .form textarea{
+    width: 98%;
+    padding: 2% 0;
+    margin-bottom: 5%;
+    background-color: #fff;
+    color: var(--titles);
+    font-size: 1em;
+    font-weight: 500;
+    border: solid 1px;
+    text-indent: 10px;
+}
+.form textarea{
+    resize: none;
+    height: 175px;
+}
+.form form div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 98%;
+}
+.form input::placeholder, .form textarea::placeholder{
+    color: var(--titles);
+    font-size: 1em;
+    text-indent: 10px;
+}
+/*colchetes para espicificar qual elemento está sendo
+utilizado, no caso submit*/
+.form form input[type=submit], .form form button{
+    width: 45%;
+    color: var(--geral);
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    background-color: black;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+}
