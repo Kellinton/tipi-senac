@@ -94,3 +94,24 @@ $('.responsive').slick({
       document.getElementById("topoFixo").classList.add("site");
     }
 }
+
+//formulário
+
+function formWhats(){
+    var nome =  '*Nome: *' + document.getElementById('nome').value;
+    var email = '*Email: *' + document.getElementById('email').value;
+    var tel =   '*Fone: *' + document.getElementById('tel').value;
+    var mens =  '*Mensagem: *' + document.getElementById('mens').value;
+
+    var agencia = '*Agência TIPI*';
+    var assunto = 'Mensagem do site!';
+
+    var numFone = '5511988626262';
+    var quebraDeLinha = '%0A';
+
+    if(email == ''){
+      alert ('O campo do email é obrigatório');
+    }
+
+    window.open('https://api.whatsapp.com/send?php=' + numFone)
+}

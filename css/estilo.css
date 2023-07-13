@@ -33,7 +33,9 @@ h2, h3, h4, a, button{
     font-weight: bold;
     font-size: 20px;
 }
-
+*{
+    font-size: 20px;
+}
 
 .topo {
     display: flex;
@@ -628,10 +630,10 @@ button.fechar-menu, button.abrir-menu{
 }
 .form form div:nth-child(2){
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 98%;
 }
+
 .form input::placeholder, .form textarea::placeholder{
     color: var(--titles);
     font-size: 1em;
@@ -644,8 +646,13 @@ utilizado, no caso submit*/
     color: var(--geral);
     font-family: 'Anton', sans-serif;
     font-weight: 200;
-    background-color: black;
+    background-color: var(--titles);
     border-radius: 5px;
     height: 50px;
     cursor: pointer;
+    border: solid 1px var(--geral);
+}
+.form form input[type=submit]:hover, .form form button:hover{
+    background: var(--geral);
+    color: var(--titles);
 }
