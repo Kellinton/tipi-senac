@@ -98,20 +98,35 @@ $('.responsive').slick({
 //formulário
 
 function formWhats(){
+
+    var form = document.getElementById('formContato');
+
     var nome =  '*Nome: *' + document.getElementById('nome').value;
     var email = '*Email: *' + document.getElementById('email').value;
-    var tel =   '*Fone: *' + document.getElementById('tel').value;
+    var tel = document.getElementById('tel').value;
     var mens =  '*Mensagem: *' + document.getElementById('mens').value;
 
     var agencia = '*Agência TIPI*';
     var assunto = 'Mensagem do site!';
 
-    var numFone = '5511988626262';
+    var numFone = '5511968360158';
     var quebraDeLinha = '%0A';
 
-    if(email == ''){
-      alert ('O campo do email é obrigatório');
+    if(tel == ''){
+      alert ("O campo do celular é obrigatório");
+      return;
+    }else{
+      tel = '*Fone: *' + document.getElementById('tel').value;
     }
 
-    window.open('https://api.whatsapp.com/send?php=' + numFone)
+    window.open('https://api.whatsapp.com/send?php=' + numFone + '&text=' +
+    numFone + '&text=' +
+    assunto + ' - ' + agencia + quebraDeLinha + quebraDeLinha +
+    nome + quebraDeLinha +
+    email + quebraDeLinha +
+    tel + quebraDeLinha +
+    mens, '_blank');
+
+    form.reset();
+    
 }
