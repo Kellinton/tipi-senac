@@ -10,9 +10,9 @@
         <ul>
           <li><a href="#" class="ativo">Home</a></li> <!--A tag <a> em HTML é usada para
             criar um link ou âncora em um documento web.-->
-          <li><a href="sobre.php">Sobre</a></li>
-          <li><a href="servicos.php">Serviços</a></li>
-          <li><a href="contato.php">Contato</a></li>
+          <li><a href="about.php">Sobre</a></li>
+          <li><a href="services.php">Serviços</a></li>
+          <li><a href="contact.php">Contato</a></li>
         </ul>
         <div class="redeSocialTodo">
           <button>Login</button>

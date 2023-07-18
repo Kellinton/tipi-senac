@@ -656,3 +656,79 @@ utilizado, no caso submit*/
     background: var(--geral);
     color: var(--titles);
 }
+.form form .botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+/* Sobre link */
+
+#servicos-link{
+    background: url(../img/fundo.jpg) no-repeat center;
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+.servicos-cont{
+    display: flex;
+    text-align: center;
+   width: 100%;
+   padding: 5%;
+}
+.servicos-cont .servicos-titulo div{
+    width: 100%;
+    display: flex;
+
+}
+.servicos-img {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 45%;
+}
+.servicos-img img{
+    border-radius: 50px;
+    width: 350px;
+    height: 350px;
+}
+.servicos-titulo h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.servicos-txt {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    border-top: solid var(--titles) 5px;
+    padding: 2%;
+    gap: 100px;
+    width: 45%;
+    border-radius: 50px;
+}
+.servicos-txt p{
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 900;
+    flex-grow: 1;
+}
+.servicos-txt button{
+    align-self: end;
+    cursor: pointer;
+    background: var(--titles);
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+/* Sobre link */
+.sobre-link{
+    margin-top: 50px;
+}
+
+.sobre-img{
+    border: solid 2px gray;
+    border-radius: 30px;
+}

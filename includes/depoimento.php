@@ -30,49 +30,53 @@
   <body> <!--No body, temos todo o conteúdo visível de uma página 
     Web,exibido no navegador-->
     <!-- Corpo da página -->
-    <header>
-    <?php require_once('conteudo/conteudo-topo.php');?>
-    </header>
-    <main> <!--No main, fica o conteúdo principal do site-->
 
-    
-    <?php require_once('conteudo/conteudo-servico.php');?>
-    <?php require_once('conteudo/conteudo-galeria.php');?>
-  
-    </main>
-    <footer>
-    <?php require_once('conteudo/conteudo-rodape.php');?>
-    </footer>      
-    
-      
+    <main>
+<section data-aos="flip-left" class="depoimento">
+    <div class="site">
+      <h2>Depoimento</h2>
+      <div>
+        <img src="img/depoimento.png" alt="Depoimento" />
+        <div class="depoimentoCarro">
+          <div>
+          <img src="img/logo03.svg" alt="User Depoimento" />
+          <p>
+            A Agência TIPI é uma empresa de desenvolvimento web que atua no
+            mercado oferecendo soluções personalizadas e inovadoras para
+            seus clientes. Com um time de profissionais altamente
+            qualificados e experientes, a Agência TIPI se destaca pela sua
+            capacidade de entender as necessidades de seus clientes e
+            entregar projetos de alta qualidade, com prazos e custos
+            competitivos.
+          </p>
+          <div>
+            <h3>Nome:</h3>
+            <h3>Data:</h3>
+          </div>
+        </div>
+        <div>
+            <img src="img/logo03.svg" alt="User Depoimento">
+            <p>A Agência TIPI é uma empresa de desenvolvimento web que atua no mercado oferecendo
+                soluções personalizadas e inovadoras para seus clientes. Com um time de profissionais
+                altamente
+                qualificados e experientes, a Agência TIPI se destaca pela sua capacidade de entender as
+                necessidades de seus clientes e entregar projetos de alta qualidade, com prazos e custos
+                competitivos.</p>
+            <div>
+                <h3>Nome:</h3>
+                <h3>Data:</h3>
+            </div>
+        </div>
+        
+        </div> 
+      </section>
+</main>
  <!-- AOS -->
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 AOS.init();
 </script>
 <script src="./script/animacoes.js"></script>
-  </body>
+</body>
 </html>
-
-
-<!--
-  Reflexão
-
-  Aprendi bastante durante o desenvolvimento do site. Foi uma experiência enriquecedora
-na qual adquiri conhecimentos e habilidades importantes.
-
-Um dos desafios que enfrentei foi relacionado ao responsivo, de forma mais específica
-em relação a um slick.button do carrosseul que estava quebrando a estrutura do layout
-em tamanhos de tela diferentes, deixando o layout desalinhado. Depois que identifiquei o problema,
-coloquei o display:none no media query para ocultar o button, e o layout foi ajustado.
-
-No geral, estou satisfeito com o resultado. Aprendi muito sobre as
- ferramentas e códigos utilizados. Foi enriquecedora tanto a implantação
- de um carroussel no site, quanto a experiência 
- de criar o menu hambúrguer que se encaixa em telas diferentes.
-
-
-
-
-
 

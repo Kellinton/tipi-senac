@@ -27,22 +27,95 @@
     de Media dentro da pasta CSS-->
   </head>
 
-  <body> <!--No body, temos todo o conteúdo visível de uma página 
-    Web,exibido no navegador-->
-    <!-- Corpo da página -->
-    
+  <body>
+    <header>
     <?php require_once('includes/topo.php');?>
-
+    </header>
     <main> <!--No main, fica o conteúdo principal do site-->
 
-    <?php require_once('includes/banner.php');?>
-    <?php require_once('includes/sobre.php');?>
+  <section data-aos="flip-left" id="sobre">
+    <div class="site sobre-link">
+      <div id="contSobre">
+        <h2>Sobre TIPI</h2>
+        <p>
+          A Agência TIPI é uma empresa de desenvolvimento web que atua no
+          mercado oferecendo soluções personalizadas e inovadoras para seus
+          clientes. Com um time de profissionais altamente qualificados e
+          experientes, a Agência TIPI se destaca pela sua capacidade de
+          entender as necessidades de seus clientes e entregar projetos de
+          alta qualidade, com prazos e custos competitivos.
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+      <div class="sobre-img">
+        <img data-aos="zoom-in"src="img/sobre.png" alt="Imagem do sobre" />
+      </div>
+    </div>
+
+    <div class="site sobre-link">   
+      <div class="sobre-img">
+        <img data-aos="zoom-in"src="img/missao-tipi.png" alt="Imagem do sobre" />
+      </div>
+      <div id="contSobre">
+        <h2>Sobre TIPI</h2>
+        <p>
+          A Agência TIPI é uma empresa de desenvolvimento web que atua no
+          mercado oferecendo soluções personalizadas e inovadoras para seus
+          clientes. Com um time de profissionais altamente qualificados e
+          experientes, a Agência TIPI se destaca pela sua capacidade de
+          entender as necessidades de seus clientes e entregar projetos de
+          alta qualidade, com prazos e custos competitivos.
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+    </div>
+
+    <div class="site sobre-link">
+      <div id="contSobre">
+        <h2>Sobre TIPI</h2>
+        <p>
+          A Agência TIPI é uma empresa de desenvolvimento web que atua no
+          mercado oferecendo soluções personalizadas e inovadoras para seus
+          clientes. Com um time de profissionais altamente qualificados e
+          experientes, a Agência TIPI se destaca pela sua capacidade de
+          entender as necessidades de seus clientes e entregar projetos de
+          alta qualidade, com prazos e custos competitivos.
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+      <div class="sobre-img">
+        <img data-aos="zoom-in"src="img/valores-tipi.png" alt="Imagem do sobre" />
+      </div>
+    </div>
+
+    <div class="site sobre-link">   
+      <div class="sobre-img">
+        <img data-aos="zoom-in"src="img/visao-tipi.png" alt="Imagem do sobre" />
+      </div>
+      <div id="contSobre">
+        <h2>Sobre TIPI</h2>
+        <p>
+          A Agência TIPI é uma empresa de desenvolvimento web que atua no
+          mercado oferecendo soluções personalizadas e inovadoras para seus
+          clientes. Com um time de profissionais altamente qualificados e
+          experientes, a Agência TIPI se destaca pela sua capacidade de
+          entender as necessidades de seus clientes e entregar projetos de
+          alta qualidade, com prazos e custos competitivos.
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+    </div>
+  
+  </section>
+
     <?php require_once('includes/servico.php');?>
     <?php require_once('includes/galeria.php');?>
-    <?php require_once('includes/depoimento.php');?>
-    <?php require_once('includes/blog.php');?>
+    
+    
     </main>
+    <footer>
     <?php require_once('includes/rodape.php');?>
+    </footer>
       
     
       
@@ -55,8 +128,6 @@ AOS.init();
 <script src="./script/animacoes.js"></script>
   </body>
 </html>
-
-
 
 
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html> <!--a declaração "doctype", serve para informar ao navegador qual é a versão HTML-->
 <html lang="pt-BR">
-  <head> <!--Dentro do Head ficam informações sobre o documento e metadados, título da página, a codificação de caracteres, 
+<head> <!--Dentro do Head ficam informações sobre o documento e metadados, título da página, a codificação de caracteres, 
     e a adição do CSS e de scripts JS-->
     <meta charset="UTF-8" /> <!--A tag "meta charset" define qual conjunto de caracteres está sendo usado no documento-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!--este meta informa ao Internet Explorer a utilizar a versão mais recente do mecanismo de renderização disponível.-->
@@ -25,61 +25,34 @@
       de estilo CSS dentro da pasta CSS-->
   <link rel="stylesheet" href="css/media.css"><!-- Um link que chama o arquivo
     de Media dentro da pasta CSS-->
-  </head>
+</head>
+<body>
+  
 
-  <body> <!--No body, temos todo o conteúdo visível de uma página 
-    Web,exibido no navegador-->
-    <!-- Corpo da página -->
-    <header>
-    <?php require_once('conteudo/conteudo-topo.php');?>
-    </header>
+<section data-aos="flip-left" id="sobre">
+<div class="site">
+  <div id="contSobre">
+    <h2>Sobre TIPI</h2>
+    <p>
+      A Agência TIPI é uma empresa de desenvolvimento web que atua no
+      mercado oferecendo soluções personalizadas e inovadoras para seus
+      clientes. Com um time de profissionais altamente qualificados e
+      experientes, a Agência TIPI se destaca pela sua capacidade de
+      entender as necessidades de seus clientes e entregar projetos de
+      alta qualidade, com prazos e custos competitivos.
+    </p>
+    <button>Saiba Mais</button>
+  </div>
+  <div>
+    <img data-aos="zoom-in"src="img/sobre.png" alt="Imagem do sobre" />
+  </div>
+</div>
+</section>
 
-    <main> <!--No main, fica o conteúdo principal do site-->
-
-    <section>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7318.157867934854!2d-46.45001965413907!3d-23.493666215385414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616491b50329%3A0xbf9ea041248320ba!2sS%C3%A3o%20Miguel%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1687884228187!5m2!1spt-BR!2sbr" width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section class="form">
-      <div class="site">
-        <h2>Formulário de contato</h2>
-
-          <form action="#" method="POST">
-            <div>
-              <input type="text" id="nome" name="nome" placeholder="Informe seu nome:">
-              <input type="email" id="email" name="email" required placeholder="Informe seu e-mail:">
-              <input type="tel" id="tel" name="tel" placeholder="Informe seu telefone:">
-              <h3>Mensagem enviada com sucesso!!!</h3>
-            </div>
-            <div>
-              <textarea name="mens" id="mens" cols="30" rows="10" placeholder="Informe sua mensagem:"></textarea>
-              <div class="botoes">
-                <input type="submit" value="Enviar via e-mail">
-                <button onclick="formWhats()">Enviar via WhatsApp</button>
-              </div>
-            </div>
-          </form>
-
-      </div>
-    </section>
-
-    <?php require_once('conteudo/conteudo-depoimento.php');?>
-    <?php require_once('conteudo/conteudo-blog.php');?>
-    
-    </main>
-    <footer>
-    <?php require_once('conteudo/conteudo-rodape.php');?>
-    </footer>
-      
-    
-      
-
- <!-- AOS -->
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 AOS.init();
 </script>
 <script src="./script/animacoes.js"></script>
   </body>
 </html>
-
-
