@@ -1,5 +1,3 @@
 # tipi-senac
 
-##projeto senac
-
        
