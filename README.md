@@ -1,3 +1,3 @@
-# tipi-senac.
+# tipi-senac
 
        
