@@ -1,7 +1,4 @@
-# tipi-senac
-
-       
-# Site TIPI - SENAC 
+## Site TIPI - SENAC 
 
 Este repositório contém o código-fonte e os recursos do site TIPI, que foi desenvolvido durante minhas aulas com professores do Senac.
 
@@ -10,6 +7,6 @@ Este repositório contém o código-fonte e os recursos do site TIPI, que foi de
 
 <p>
 
-<img src="/to_readme/layoutAgencia.png">
+<img width="400" height="800" src="/to_readme/layoutAgencia.png">
 
 </p>
