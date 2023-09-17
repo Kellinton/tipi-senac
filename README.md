@@ -1,9 +1,8 @@
-## Site TIPI - SENAC 
+## TIPI Site - SENAC 
 
-Este repositório contém o código-fonte e os recursos do site TIPI, que foi desenvolvido durante minhas aulas com professores do Senac.
+This repository contains the source code and resources of the TIPI website, which was developed during my classes with Senac teachers.
 
-
-## Layout TIPI
+## TIPI Layout
 
 <p>
 
